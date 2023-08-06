@@ -16,22 +16,11 @@
         <h1>Diện Tích Hình chữ Nhật</h1>
         <form >
         <label for="fname">Chiều Dài:</label><br>
-        <input type="text" id="fname" name="a" value="
-            <?php 
-                echo $cd ;
-            ?>
-        " ><br>
+        <input type="text" id="fname" name="a" value="<?php echo (isset($_POST['a'])) ? $_POST ['a'] : '' ; ?>" ><br>
         <label for="lname">Chiều Rộng:</label><br>
-        <input type="text" id="lname" name="b" value="
-            <?php 
-                echo $cr ;
-            ?>
-        "><br><br>
+        <input type="text" id="lname" name="b" value="<?php echo (isset($_POST['b'])) ? $_POST ['b'] : '' ;?>"><br><br>
         <label for="lname">Diện Tích:</label><br>
-        <input type="text" id="lname" name="c" readonly="true "  value = "
-            <?php 
-                echo $dt ;
-            ?>" ><br><br>
+        <input type="text" id="lname" name="c" disabled  value = "<?php echo isset($dt) ? $dt : '' ;?>" ><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>
