@@ -1,0 +1,11 @@
+.banner{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: aqua;
+    color: rgb(238, 154, 101);
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
