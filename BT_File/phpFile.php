@@ -11,6 +11,7 @@
     $text = "localhost ; root; pwd1234";  
     fwrite($myfile, $text) or die("could not write file!");
     fclose($myfile);
+
     echo "File 'file1.txt' write"
     ?>
 </body>

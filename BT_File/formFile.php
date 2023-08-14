@@ -65,7 +65,7 @@
 
     </form>
     <?php
-        if(isset($_POST["ten_file"]) && isset($_POST["noi_dung"])){
+        if(!empty($_POST["ten_file"]) && !empty($_POST["noi_dung"])){
             $ten_file =$_POST["ten_file"];
             $noi_dung =$_POST["noi_dung"];
             // ghi file
